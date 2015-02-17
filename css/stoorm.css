@@ -6640,6 +6640,13 @@ blockquote {
 .title {
   margin-top: 0;
 }
+.banner-caption h1,
+.banner-caption h2 {
+  color: #ffffff;
+}
+.banner-caption h1 {
+  font-size: 60px;
+}
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
@@ -6747,6 +6754,9 @@ blockquote {
 .section.panel-body,
 .section.modal-footer {
   padding-bottom: 0;
+}
+.space {
+  padding: 20px 0;
 }
 .banner {
   width: 100%;
@@ -6931,13 +6941,21 @@ p.form {
 }
 /* Key features
 ----------------------------------------------------------------------------- */
-.media.testimonial {
+.key-feature {
   border-left: 1px solid #FFF;
   margin-bottom: 25px;
+  padding-left: 10px;
 }
-.media.testimonial blockquote {
+.key-feature blockquote {
   margin-bottom: 0;
 }
-.media.testimonial footer {
-  display: none;
+/* Technical features
+----------------------------------------------------------------------------- */
+.technology .fa {
+  font-size: 24px;
+  width: 40px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  text-align: center;
 }
