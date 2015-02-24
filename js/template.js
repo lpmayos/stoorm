@@ -52,5 +52,23 @@
             });
         }
 
+        //i18next - Multilingual support
+        //-----------------------------------------------
+        i18n.init(function(t) {
+            // translate nav
+            $(".nav").i18n();
+        });
+
+        i18n.setLng("en");
+
+        $("#spanish").click(function() {
+            i18n.setLng("es");
+            location.reload();
+        });
+        $("#english").click(function() {
+            i18n.setLng("en");
+            location.reload();
+        });
+
     });
 })(this.jQuery);
