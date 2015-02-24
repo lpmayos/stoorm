@@ -4197,6 +4197,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
+
+.language_selection {
+
+}
+.language_selection .language {
+    font-size: 12px !important;
+    padding: 33px 10px !important;
+}
+.language_selection .language#english {
+    margin-left: 30px;
+}
+
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -4218,6 +4230,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
+
+  .language_selection li {
+      float: right;
+      margin-right: 10px;
+  }
+  .language_selection .language {
+      padding: 0 !important;
+  }
+  .language_selection .language#english {
+      margin-left: 0;
+  }
+
 }
 @media (min-width: 768px) {
   .navbar-nav {

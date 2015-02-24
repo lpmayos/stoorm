@@ -264,13 +264,39 @@ blockquote {
     }
 }
 
+.language_selection{
+    .language {
+        font-size: @font-size-small !important;
+        padding: 33px 10px !important;
+        &#english {
+            margin-left: 30px;
+        }
+    }
+}
+
 @media (min-width:@screen-sm) {
     .main-navigation .navbar-default .navbar-nav > li > a {
         padding-top: 30px;
         padding-bottom: 30px;
         .transition(all 0.3s ease-in-out);
     }
+
+    .language_selection {
+        li {
+          float: right;
+          margin-right: 10px;
+        }
+        .language {
+            padding: 0 !important;
+            &#english {
+                margin-left: 0;
+            }
+        }
+    }
+
+
 }
+
 
 @media (min-width:@screen-sm) and (max-width:@screen-md) {
     .main-navigation .container-fluid {
