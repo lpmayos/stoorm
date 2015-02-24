@@ -280,21 +280,6 @@ blockquote {
         padding-bottom: 30px;
         .transition(all 0.3s ease-in-out);
     }
-
-    .language_selection {
-        li {
-          float: right;
-          margin-right: 10px;
-        }
-        .language {
-            padding: 0 !important;
-            &#english {
-                margin-left: 0;
-            }
-        }
-    }
-
-
 }
 
 
@@ -312,6 +297,23 @@ blockquote {
     .header.navbar-fixed-top {
         position: absolute;
     }
+
+    .language_selection {
+        text-align: right;
+        margin-right: 5px;
+        li {
+            display: inline;
+            margin-right: 5px;
+        }
+        .language {
+            padding: 0 !important;
+            display: inline !important;
+            &#english {
+                margin-left: 0;
+            }
+        }
+    }
+
 }
 
 
@@ -327,13 +329,6 @@ blockquote {
         transform: scale(0.8);
         margin-top: 0;
         margin-bottom: 0;
-    }
-}
-
-@media (min-width:@screen-sm) {
-    .fixed-header-on .navbar-default .navbar-nav > li > a {
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
 }
 

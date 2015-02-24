@@ -4197,18 +4197,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
-
-.language_selection {
-
-}
-.language_selection .language {
-    font-size: 12px !important;
-    padding: 33px 10px !important;
-}
-.language_selection .language#english {
-    margin-left: 30px;
-}
-
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -4230,18 +4218,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
-
-  .language_selection li {
-      float: right;
-      margin-right: 10px;
-  }
-  .language_selection .language {
-      padding: 0 !important;
-  }
-  .language_selection .language#english {
-      margin-left: 0;
-  }
-
 }
 @media (min-width: 768px) {
   .navbar-nav {
@@ -6797,6 +6773,13 @@ blockquote {
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
   color: #1db4b8;
 }
+.language_selection .language {
+  font-size: 12px !important;
+  padding: 33px 10px !important;
+}
+.language_selection .language#english {
+  margin-left: 30px;
+}
 @media (min-width: 768px) {
   .main-navigation .navbar-default .navbar-nav > li > a {
     padding-top: 30px;
@@ -6808,7 +6791,7 @@ blockquote {
     -o-transition: all 0.3s ease-in-out;
   }
 }
-@media (min-width: 768px) and (max-width 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .main-navigation .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -6820,6 +6803,21 @@ blockquote {
 @media (max-width: 768px) {
   .header.navbar-fixed-top {
     position: absolute;
+  }
+  .language_selection {
+    text-align: right;
+    margin-right: 5px;
+  }
+  .language_selection li {
+    display: inline;
+    margin-right: 5px;
+  }
+  .language_selection .language {
+    padding: 0 !important;
+    display: inline !important;
+  }
+  .language_selection .language#english {
+    margin-left: 0;
   }
 }
 /* Fixed Header
@@ -6833,12 +6831,6 @@ blockquote {
   transform: scale(0.8);
   margin-top: 0;
   margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  .fixed-header-on .navbar-default .navbar-nav > li > a {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 }
 @media (max-width: 992px) {
   .fixed-header-on .logo,
@@ -6902,11 +6894,6 @@ blockquote {
 .team-member p {
   margin-top: 0;
 }
-/* Contact
------------------------------------------------------------------------------ */
-p.form {
-  font-size: 18px;
-}
 /* Carousel
 ----------------------------------------------------------------------------- */
 .carousel-inner {
@@ -6941,54 +6928,41 @@ p.form {
 .key-feature blockquote {
   margin-bottom: 0;
 }
-/* Technical features
+/* awards
 ----------------------------------------------------------------------------- */
-.technology .fa {
-  font-size: 24px;
-  width: 40px;
-  height: 25px;
-  line-height: 25px;
-  padding: 0 5px;
+#awards {
   text-align: center;
+  font-size: 18px;
 }
-
-
-footer .logos  img {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter: grayscale(100%);
+#awards img {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+  margin-top: 20px;
 }
-
+/* footer
+----------------------------------------------------------------------------- */
 footer {
-    font-size: 24px;
+  font-size: 18px;
 }
-
-footer a {
-  display: none !important;
-}
-
 footer .footer-content-right {
   text-align: center;
   border: 1px solid lightgray;
   padding: 20px 0 0 0;
- border-top-right-radius: 10px;
-   border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-   border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-
-#awards {
-    text-align: center;
-    font-size: 24px;
+footer a {
+  display: none !important;
 }
-
-#awards  img {
-    margin-top: 20px;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter: grayscale(100%);
+footer .logos img {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
 }
