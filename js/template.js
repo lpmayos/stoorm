@@ -1,7 +1,7 @@
 (function($){
     $(document).ready(function(){
     
-        $(".slogan-image").backstretch('images/background.png');
+        $(".slogan-image").backstretch('images/background.jpg');
         
         // Fixed header
         //-----------------------------------------------

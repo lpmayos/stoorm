@@ -20,6 +20,14 @@
     -o-transition:      @transition;  
 }
 
+.grayscale(@value: 1) {
+    -webkit-filter: grayscale(@value);
+    -moz-filter: grayscale(@value);
+    -o-filter: grayscale(@value);
+    -ms-filter: grayscale(@value);
+    filter: grayscale(@value);
+}
+
 
 /* Typography
 ----------------------------------------------------------------------------- */
@@ -264,7 +272,7 @@ blockquote {
     }
 }
 
-@media (min-width:@screen-sm) and (max-width@screen-md) {
+@media (min-width:@screen-sm) and (max-width:@screen-md) {
     .main-navigation .container-fluid {
         padding-left: 0;
         padding-right: 0;
@@ -365,6 +373,7 @@ blockquote {
     img {
         margin: 0 auto;
         border: 7px solid #fff !important;
+        max-width: 200px;
     }
 
     h4 {
@@ -376,14 +385,6 @@ blockquote {
     p {
         margin-top: 0;
     }
-}
-
-
-/* Contact
------------------------------------------------------------------------------ */
-
-p.form {
-    font-size: @font-size-large;
 }
 
 
@@ -433,16 +434,41 @@ p.form {
 }
 
 
-/* Technical features
+/* awards
 ----------------------------------------------------------------------------- */
 
-.technology {
-    .fa {
-        font-size: 24px;
-        width: 40px;
-        height: 25px;
-        line-height: 25px;
-        padding: 0 5px;
-        text-align: center;
+#awards {
+    text-align: center;
+    font-size: @font-size-large;
+    img {
+        .grayscale();
+        margin-top: 20px;
     }
 }
+
+
+/* footer
+----------------------------------------------------------------------------- */
+
+footer {
+    font-size: @font-size-large;
+
+    .footer-content-right {
+        text-align: center;
+        border: 1px solid lightgray;
+        padding: 20px 0 0 0;
+        .border-top-radius(10px);
+        .border-bottom-radius(10px);
+    }
+
+    a {
+        display: none !important;
+    }
+
+    .logos {
+        img {
+            .grayscale();
+        }
+    }
+}
+

@@ -6868,6 +6868,7 @@ blockquote {
 .team-member img {
   margin: 0 auto;
   border: 7px solid #fff !important;
+  max-width: 200px;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -6925,4 +6926,45 @@ p.form {
   line-height: 25px;
   padding: 0 5px;
   text-align: center;
+}
+
+
+footer .logos  img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+footer {
+    font-size: 24px;
+}
+
+footer a {
+  display: none !important;
+}
+
+footer .footer-content-right {
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 20px 0 0 0;
+ border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+#awards {
+    text-align: center;
+    font-size: 24px;
+}
+
+#awards  img {
+    margin-top: 20px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
