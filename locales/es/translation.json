@@ -1,6 +1,68 @@
 {
+    "awards": {
+        "award1": "Finalistas valortec 2014",
+        "award2": "Finalistas CreatiFI 2014",
+        "title": "Premios"
+    },
+    "banner": {
+        "text": "Creemos juntos!"
+    },
+    "contact": {
+        "text": "Quieres que te informemos cuando lancemos la aplicación? Rellena el formulario o contáctanos por email y te mantendremos informado!",
+        "title": "Contacta con nosotros"
+    },
+    "keyfeat": {
+        "a1": "Útil",
+        "a2": "Supera los bloqueos creativos y el síndrome de la página en blanco.",
+        "b1": "Creativo",
+        "b2": "Tormenta de ideas, explora nuevas opciones.",
+        "c1": "Cooperativo",
+        "c2": "La colaboración asícnrona te permite trabajar a tu propio ritmo.",
+        "d1": "Participativo",
+        "d2": "Permite al cliente participar de forma más activa y satisfactoria.",
+        "e1": "Divertido",
+        "e2": "Juegos de tarjetas para ordenar, inspeccionar y evaluar ideas.",
+        "f1": "Productivo",
+        "f2": "Proporciona estímulos para incrementar notablemente la productividad.",
+        "title": "Características clave"
+    },
+    "logos": {
+        "a_product_of": "un producto de:",
+        "in_collaboration": "en colaboración con",
+        "powered_by": "powered by:"
+    },
     "nav": {
         "theapp": "La aplicación",
-        "features": "Características"
+        "features": "Características",
+        "team": "Equipo",
+        "awards": "Premios",
+        "contact": "Contacto"
+    },
+    "slogan": {
+        "slogan1": "Encuentra nuevas ideas",
+        "slogan2": "Una herramienta ideal para profesionales creativos"
+    },
+    "team": {
+        "subtitle": "Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.",
+        "title": "Equipo"
+    },
+    "theapp": {
+        "1": {
+            "a": "Crea un nuevo briefing para encontrar la próxima gran idea",
+            "b": "Define los conceptos clave para plantar la semilla",
+            "title": "1. Briefings"
+        },
+        "2": {
+            "a": "El motor de Stoorm busca nuevas ideas y las presenta de manera interactiva",
+            "b": "Las ideas se organizan en categorías tales como utilidad, metáfora, equivalencia, historia diaria, etc...",
+            "title": "2. Search for new ideas"
+        },
+        "3": {
+            "a": "Evalúa y anota ideas con un juego ordenable de tarjetas",
+            "b": "Comparte las ideas seleccionadas con compañeros de equipo para seguir debatiendo",
+            "title": "3. Evalúa y preselecciona"
+        },
+        "subtitle": "Tormenta de ideas, inspírate y colabora con compañeros de equipo",
+        "title": "La Aplicación"
     }
 }
