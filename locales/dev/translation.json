@@ -1,3 +1,68 @@
 {
-
+    "awards": {
+        "award1": "Finalists valortec 2014",
+        "award2": "Finalists CreatiFI 2014",
+        "title": "Awards"
+    },
+    "banner": {
+        "text": "Let's create together!"
+    },
+    "contact": {
+        "text": "Do you want to get informed when we launch? Fill in the form or contact us by email and we will keep you up to date!",
+        "title": "Contact Us"
+    },
+    "keyfeat": {
+        "a1": "Useful",
+        "a2": "Overcome creative blocks and blank page syndrome.",
+        "b1": "Creative",
+        "b2": "Streamline brainstorming, and explore new ideas.",
+        "c1": "Cooperative",
+        "c2": "Asynchronous collaboration allows you to work at your own pace.",
+        "d1": "Participative",
+        "d2": "Allows a more active and enjoyable client participation.",
+        "e1": "Fun",
+        "e2": "Card games to sort, lookup and evaluate ideas.",
+        "f1": "Productive",
+        "f2": "Provides stimulus to increase productivity noticeably.",
+        "title": "Key features"
+    },
+    "logos": {
+        "a_product_of": "a product of:",
+        "in_collaboration": "in collaboration with",
+        "powered_by": "powered by:"
+    },
+    "nav": {
+        "theapp": "The app",
+        "features": "Features",
+        "team": "Team",
+        "awards": "Awards",
+        "contact": "Contact"
+    },
+    "slogan": {
+        "slogan1": "Find new ideas",
+        "slogan2": "An ideal tool for creative professionals"
+    },
+    "team": {
+        "subtitle": "Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.",
+        "title": "Team"
+    },
+    "theapp": {
+        "1": {
+            "a": "Create a new briefing to find the next big idea",
+            "b": "Define key concepts to seed the mining",
+            "title": "1. Briefings"
+        },
+        "2": {
+            "a": "The Stoorm engine fetches new ideas and present them in interactive ways",
+            "b": "Ideas are sorted in categories such as utility, metaphor, equivalence, daily story, etc…",
+            "title": "2. Search for new ideas"
+        },
+        "3": {
+            "a": "Evaluate and annotate ideas with a card-sorting game",
+            "b": "Share selected ideas with teammates for further discussions",
+            "title": "3. Evaluate and pre-select"
+        },
+        "subtitle": "Brainstorm, get inspired, and collaborate with teammates",
+        "title": "The App"
+    }
 }
