@@ -6875,6 +6875,10 @@ blockquote {
 .slogan .slogan-caption h1 {
   font-size: 60px;
 }
+.slogan .slogan-caption h2 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
 /* Team
 ----------------------------------------------------------------------------- */
 .team-member {
