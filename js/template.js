@@ -41,7 +41,7 @@
             $("body").addClass("scroll-spy");
             $('body').scrollspy({ 
                 target: '.scrollspy',
-                offset: $(".header").height() + 10
+                offset: 87
             });
         }
 
@@ -55,7 +55,7 @@
                     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                     if (target.length) {
                         $('html,body').animate({
-                            scrollTop: target.offset().top - $(".header").height() + 10
+                            scrollTop: target.offset().top - 85
                         }, 1000);
                         return false;
                     }
