@@ -9,8 +9,8 @@
 @dark_color: #082127;
 @light_grey: #f7f7f7;
 
-// //** Point at which the navbar becomes uncollapsed.
-// @grid-float-breakpoint: 800px;
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint: 840px;
 
 
 /* mixins
@@ -231,7 +231,7 @@ blockquote {
     padding: 80px 0;
 }
 
-@media (max-width:@screen-sm) {
+@media (max-width:@grid-float-breakpoint) {
     .section {
         padding: 20px 0;
     }
@@ -283,7 +283,7 @@ blockquote {
     }
 }
 
-@media (min-width:@screen-sm) {
+@media (min-width:@grid-float-breakpoint) {
     .main-navigation .navbar-default .navbar-nav > li > a {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -292,7 +292,7 @@ blockquote {
 }
 
 
-@media (min-width:@screen-sm) and (max-width:@screen-md) {
+@media (min-width:@grid-float-breakpoint) and (max-width:@screen-md) {
     .main-navigation .container-fluid {
         padding-left: 0;
         padding-right: 0;
@@ -302,7 +302,7 @@ blockquote {
     }
 }
 
-@media (max-width:@screen-sm) {
+@media (max-width:@grid-float-breakpoint) {
     // .header.navbar-fixed-top {
     //     position: absolute;
     // }
@@ -406,7 +406,7 @@ blockquote {
     }
 }
 
-@media (max-width:@screen-sm) {
+@media (max-width:@grid-float-breakpoint) {
     .slogan {
         .slogan-caption {
             h1 {
@@ -477,7 +477,7 @@ blockquote {
     }
 }
 
-@media (max-width:@screen-sm) {
+@media (max-width:@grid-float-breakpoint) {
     #the-app {
         .space {
             padding: 0;
