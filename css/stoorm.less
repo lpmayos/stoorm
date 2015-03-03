@@ -6,8 +6,11 @@
 
 @super_light_color: #E2F0F1;
 @light_color: #1DB4B8;
-@dark_color: #397D85;
+@dark_color: #082127;
 @light_grey: #f7f7f7;
+
+// //** Point at which the navbar becomes uncollapsed.
+// @grid-float-breakpoint: 800px;
 
 
 /* mixins
@@ -228,6 +231,12 @@ blockquote {
     padding: 80px 0;
 }
 
+@media (max-width:@screen-sm) {
+    .section {
+        padding: 20px 0;
+    }
+}
+
 
 /* Navigations
 ----------------------------------------------------------------------------- */
@@ -245,7 +254,7 @@ blockquote {
             & > li {
                 & > a {
                     color: #fff;
-                    padding: 10px 20px;
+                    padding: 10px 18px;
                     font-size: 18px;
                     font-weight: 300;
                 }
@@ -294,8 +303,25 @@ blockquote {
 }
 
 @media (max-width:@screen-sm) {
+    // .header.navbar-fixed-top {
+    //     position: absolute;
+    // }
+
     .header.navbar-fixed-top {
-        position: absolute;
+        background-color: @dark_color;
+        .logo {
+            max-width: 250px;
+        }
+        .header-right {
+            margin-top: -56px;
+        }
+        button {
+            margin-right: 0;
+        }
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
     }
 
     .language_selection {
@@ -321,22 +347,14 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .fixed-header-on {
     .header {
-        background-color: rgba(47, 76, 87, 0.95);
-        padding: 5px 0;
+        background-color: rgba(8, 33, 39, 0.95);  // dark color, 0.95 opacity
+        padding: 0;
     }
     .logo {
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
         margin-top: 0;
         margin-bottom: 0;
-    }
-}
-
-@media (max-width:@screen-md) {
-    .fixed-header-on .logo,
-    .fixed-header-on .site-name,
-    .fixed-header-on .site-slogan {
-        display: none;
     }
 }
 
@@ -388,6 +406,19 @@ blockquote {
     }
 }
 
+@media (max-width:@screen-sm) {
+    .slogan {
+        .slogan-caption {
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
 
 /* Team
 ----------------------------------------------------------------------------- */
@@ -422,6 +453,7 @@ blockquote {
 
     .item {
         font-size: @font-size-large;
+        padding: 0 10%;
 
         i {
             font-size: @font-size-base;
@@ -445,6 +477,35 @@ blockquote {
     }
 }
 
+@media (max-width:@screen-sm) {
+    #the-app {
+        .space {
+            padding: 0;
+        }
+    }
+    .carousel-inner {
+        .item {
+            text-align: center;
+            font-size: @font-size-base * 1.1;
+            line-height: @font-size-base * 1.3;
+            padding: 0 10%;
+            min-height: 650px;
+
+            h1 {
+                font-size: 25px;
+            }
+            img {
+                display: inline;
+            }
+        }
+    }
+
+    .carousel-control {
+        &.left, &.right {
+            width: 5%;
+        }
+    }
+}
 
 /* Key features
 ----------------------------------------------------------------------------- */
@@ -469,6 +530,7 @@ blockquote {
     img {
         .grayscale();
         margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
 
@@ -492,6 +554,8 @@ footer {
     }
 
     .logos {
+        background-color: #000;
+
         img {
             .grayscale();
         }

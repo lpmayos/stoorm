@@ -1,8 +1,8 @@
 {
     "awards": {
-        "award1": "Finalistas valortec 2014",
-        "award2": "Finalistas CreatiFI 2014",
-        "title": "Premios"
+        "award1": "Finalistas Valortec 2014",
+        "award2": "Premiados CreatiFI 2014",
+        "title": "Reconocimientos"
     },
     "banner": {
         "text": "Creemos juntos!"
@@ -32,10 +32,10 @@
         "powered_by": "powered by:"
     },
     "nav": {
-        "theapp": "La aplicación",
+        "theapp": "La App",
         "features": "Características",
         "team": "Equipo",
-        "awards": "Premios",
+        "awards": "Reconocimientos",
         "contact": "Contacto"
     },
     "slogan": {

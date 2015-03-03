@@ -2,6 +2,15 @@
     $(document).ready(function(){
     
         $(".slogan-image").backstretch('images/background.jpg');
+
+        
+        // close navbar on click
+        //-----------------------------------------------
+        $('.nav a').on('click', function(){
+            $(".btn-navbar").click(); //bootstrap 2.x
+            $(".navbar-toggle").click() //bootstrap 3.x by Richard
+        });
+
         
         // Fixed header
         //-----------------------------------------------
@@ -25,15 +34,17 @@
             };
         });
 
+
         //Scroll Spy
         //-----------------------------------------------
         if($(".scrollspy").length>0) {
             $("body").addClass("scroll-spy");
             $('body').scrollspy({ 
                 target: '.scrollspy',
-                offset: 97
+                offset: $(".header").height() + 10
             });
         }
+
 
         //Smooth Scroll
         //-----------------------------------------------
@@ -44,13 +55,14 @@
                     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                     if (target.length) {
                         $('html,body').animate({
-                            scrollTop: target.offset().top-97
+                            scrollTop: target.offset().top - $(".header").height() + 10
                         }, 1000);
                         return false;
                     }
                 }
             });
         }
+
 
         //i18next - Multilingual support
         //-----------------------------------------------
