@@ -284,10 +284,12 @@ blockquote {
 }
 
 @media (min-width:@grid-float-breakpoint) {
-    .main-navigation .navbar-default .navbar-nav > li > a {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        .transition(all 0.3s ease-in-out);
+    .main-navigation {
+        .navbar-default .navbar-nav > li > a {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .transition(all 0.3s ease-in-out);
+        }
     }
 }
 
@@ -307,23 +309,26 @@ blockquote {
     //     position: absolute;
     // }
 
+    .main-navigation {
+        height: 0;
+    }
+
     .header.navbar-fixed-top {
         background-color: @dark_color;
         .logo {
             max-width: 250px;
-        }
-        .header-right {
-            margin-top: -56px;
+            margin-top: 5px;
         }
         button {
             margin-right: 0;
-            margin-top: 13px;
-            margin-bottom: 13px;
+            margin-top: -47px;
+            // margin-bottom: 13px;
         }
     }
 
     .navbar-collapse {
         margin-top: 10px;
+        background-color: @dark_color;
     }
 
     .language_selection {
